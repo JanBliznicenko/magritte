@@ -45,7 +45,7 @@ BaselineOfMagritte >> baseline310CommonExtDeps: spec [
 { #category : 'baselines' }
 BaselineOfMagritte >> baseline330ForPharo: spec [
 			
-	spec for: #(#'pharo7.x' #'pharo8.x' #'pharo9.x' #'pharo10.x' #'pharo11.x' #'pharo12.x' #'pharo13.x') do: [
+	spec for: (self pharoVersionsFrom: 7) do: [
 		spec 
 			baseline: #'PharoEnhancements' with: [ spec repository: 'github://seandenigris/Pharo-Enhancements' ].
 		spec
@@ -152,4 +152,12 @@ BaselineOfMagritte >> isGTImage [
 	^ self class packageOrganizer packageNames anySatisfy: [ :pn | 
 		pn beginsWith: 'Lepiter-' ] 
 	"Implementation note: used to check for GToolkit prefix, but P7 has a GToolkit-Examples package. Lepiter, OTOH, could only be loaded in a GT image"
+]
+
+{ #category : 'baselines' }
+BaselineOfMagritte >> pharoVersionsFrom: aVersion [
+	"Method copied from BaselineOf as it was not present before Pharo 11"
+
+	^ (aVersion to: SystemVersion current major) collect: [ :v |
+		  ('pharo' , v asString , '.x') asSymbol ]
 ]
