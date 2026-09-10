@@ -6,7 +6,7 @@ Magritte is a fully dynamic meta-description framework that helps to solve those
 
 ### Installation
   * [Pharo Smalltalk](http://www.pharo.org/):
-    * Pharo 8.x - 13.x:
+    * Pharo 8.x - 14.x:
     ```smalltalk
     Metacello new
       baseline: 'Magritte';
@@ -26,6 +26,8 @@ Magritte is a fully dynamic meta-description framework that helps to solve those
   * [GNU Smalltalk](http://smalltalk.gnu.org/): An initial port is available through the the GNU Smalltalk git repository. 
 
 Christoph Lamprecht ported Magritte to [Perl](http://sites.google.com/site/vlclamprecht/Home/perl).
+
+Note that Pharo 8 and lower are no longer tested and may not work properly.
 
 ### Add as a project dependency
 
