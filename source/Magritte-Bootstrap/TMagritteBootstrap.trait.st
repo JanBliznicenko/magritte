@@ -1,9 +1,9 @@
 Trait {
-	#name : 'TMagritteBootstrap',
-	#category : 'Magritte-Bootstrap'
+	#name : #TMagritteBootstrap,
+	#category : #'Magritte-Bootstrap'
 }
 
-{ #category : 'reflective operations' }
+{ #category : #'reflective operations' }
 TMagritteBootstrap >> doesNotUnderstand: aMessage [
 	 
 	^ self magritteDescription 

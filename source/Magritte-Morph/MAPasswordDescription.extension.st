@@ -1,6 +1,6 @@
-Extension { #name : 'MAPasswordDescription' }
+Extension { #name : #MAPasswordDescription }
 
-{ #category : '*magritte-morph-default' }
-MAPasswordDescription classSide >> defaultMorphicClasses [
+{ #category : #'*magritte-morph-default' }
+MAPasswordDescription class >> defaultMorphicClasses [
 	^ Array with: MAMorphicPassword
 ]

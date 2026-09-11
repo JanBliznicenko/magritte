@@ -1,6 +1,6 @@
-Extension { #name : 'MASingleOptionDescription' }
+Extension { #name : #MASingleOptionDescription }
 
-{ #category : '*magritte-seaside-defaults' }
-MASingleOptionDescription classSide >> defaultComponentClasses [
+{ #category : #'*magritte-seaside-defaults' }
+MASingleOptionDescription class >> defaultComponentClasses [
 	^ Array with: MASelectListComponent with: MARadioGroupComponent
 ]

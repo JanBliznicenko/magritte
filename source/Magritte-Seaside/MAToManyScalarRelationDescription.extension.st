@@ -1,11 +1,11 @@
-Extension { #name : 'MAToManyScalarRelationDescription' }
+Extension { #name : #MAToManyScalarRelationDescription }
 
-{ #category : '*magritte-seaside-accessing-defaults' }
-MAToManyScalarRelationDescription classSide >> defaultComponentClasses [
+{ #category : #'*magritte-seaside-accessing-defaults' }
+MAToManyScalarRelationDescription class >> defaultComponentClasses [
 	^ Array with: MAOneToManyScalarComponent
 ]
 
-{ #category : '*magritte-seaside-accessing-defaults' }
-MAToManyScalarRelationDescription classSide >> defaultReportColumnClasses [
+{ #category : #'*magritte-seaside-accessing-defaults' }
+MAToManyScalarRelationDescription class >> defaultReportColumnClasses [
 	^ Array with: MADescribedScalarColumn
 ]

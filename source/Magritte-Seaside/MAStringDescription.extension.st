@@ -1,6 +1,6 @@
-Extension { #name : 'MAStringDescription' }
+Extension { #name : #MAStringDescription }
 
-{ #category : '*magritte-seaside-defaults' }
-MAStringDescription classSide >> defaultComponentClasses [
+{ #category : #'*magritte-seaside-defaults' }
+MAStringDescription class >> defaultComponentClasses [
 	^ Array with: MATextInputComponent
 ]

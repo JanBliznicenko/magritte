@@ -1,10 +1,10 @@
 Class {
-	#name : 'MAExternalFileModelTest',
-	#superclass : 'MAFileModelTest',
-	#category : 'Magritte-Tests-GemStone-Model'
+	#name : #MAExternalFileModelTest,
+	#superclass : #MAFileModelTest,
+	#category : #'Magritte-Tests-GemStone-Model'
 }
 
-{ #category : 'private' }
+{ #category : #private }
 MAExternalFileModelTest >> actualClass [
 	^ MAExternalFileModel
 ]
