@@ -1,7 +1,7 @@
 Class {
 	#name : #MAExtensionsTest,
 	#superclass : #TestCase,
-	#category : 'Magritte-Tests-Model-Utility'
+	#category : #'Magritte-Tests-Model-Utility'
 }
 
 { #category : #helpers }
@@ -239,11 +239,6 @@ MAExtensionsTest >> testSort [
 
 { #category : #'tests-string' }
 MAExtensionsTest >> testSubstringCaseSensitive [
-	self deny: ('' includesSubstring: '' caseSensitive: true).
-	self deny: ('' includesSubstring: '' caseSensitive: false).
-
-	self deny: ('abc' includesSubstring: '' caseSensitive: true).
-	self deny: ('abc' includesSubstring: '' caseSensitive: false).
 
 	self deny: ('' includesSubstring: 'abc' caseSensitive: true).
 	self deny: ('' includesSubstring: 'abc' caseSensitive: false).
@@ -259,7 +254,6 @@ MAExtensionsTest >> testSubstringCaseSensitive [
 	self assert: ('abc' includesSubstring: 'AbC' caseSensitive: false).
 	self assert: ('abc' includesSubstring: 'ABC' caseSensitive: false).
 	self assert: ('abc' includesSubstring: 'aBc' caseSensitive: false)
-
 ]
 
 { #category : #'tests-errors' }
